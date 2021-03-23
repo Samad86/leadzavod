@@ -1,0 +1,79 @@
+// out: style.css, compress: true
+
+@import 'vars.less';
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Cyrillic';
+  src: url('../fonts/BebasNeue-Cyrillic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+
+  font-size: 1rem;
+  color: @white;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  color: inherit;
+}
+
+/* Blocks */
+
+@import 'blocks/container.less';
+@import 'blocks/header.less';
+@import 'blocks/btn.less';
+@import 'blocks/content.less';

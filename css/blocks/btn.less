@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.btn {
+  border: 1px @white solid;
+  cursor: pointer;
+
+  font-family: 'Montserrat-Medium';
+
+  transition: color 0.2s linear, border-color 0.2s linear;
+
+  &:hover {
+    color: darken(@white, 15%);
+    border-color: darken(@white, 15%);
+  }
+
+  &--sm {
+    padding: 0.69rem 0.94rem;
+
+    border-radius: 5px;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &--lg {
+    padding: 1.25rem 2.69rem;
+
+    max-width: 18.13rem;
+    border-radius: 10px;
+
+    font-size: 1.88rem;
+    font-weight: 600;
+    line-height: 2.38rem;
+  }
+}
+
+/* Media */
+
+@media (max-width: 1250px) {
+  .btn {
+    &--sm {
+      font-size: 0.88rem;
+      line-height: 1.38rem;
+    }
+
+    &--lg {
+      margin: 1.25rem 0 4.13rem;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .btn {
+    &-sm {
+      padding: 8px 12px;
+    }
+
+    &--lg {
+      margin: 1.25rem 0 4.13rem;
+      max-width: 13.75rem;
+
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .btn {
+    &--lg {
+      margin: 1.25rem 0 13.75rem;
+    }
+  }
+}
